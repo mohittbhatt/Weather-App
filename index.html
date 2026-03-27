@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="weather-card">
+      <h1>Weather App</h1>
+      <p class="subtitle">Check live weather of any city</p>
+
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+        <button id="searchBtn">Search</button>
+      </div>
+
+      <div id="message" class="message"></div>
+
+      <div id="weatherResult" class="weather-result hidden">
+        <h2 id="cityName">City Name</h2>
+        <p id="weatherCondition">Condition</p>
+
+        <div class="main-weather">
+          <div class="temp" id="temperature">--°C</div>
+          <div class="emoji" id="weatherEmoji">⛅</div>
+        </div>
+
+        <div class="details">
+          <div class="detail-box">
+            <h3>Wind</h3>
+            <p id="windSpeed">-- km/h</p>
+          </div>
+
+          <div class="detail-box">
+            <h3>Humidity</h3>
+            <p id="humidity">--%</p>
+          </div>
+
+          <div class="detail-box">
+            <h3>Feels Like</h3>
+            <p id="feelsLike">--°C</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
